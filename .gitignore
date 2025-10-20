@@ -1,6 +1,7 @@
 # === ENVIRONMENT ===
-*.env
+*.env*
 .env/
+.env.*
 # === UPLOADS ===
 assets/
 uploads/

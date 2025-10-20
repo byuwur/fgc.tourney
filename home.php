@@ -18,7 +18,7 @@ require_once "{$TO_HOME}/spa.php/_functions.php";
 //require_once "{$TO_HOME}/_functions.php";
 // Include composer libraries
 //require_once "{$TO_HOME}/spa.php/_plugins.php";
-//require_once "{$TO_HOME}/_plugins.php";
+require_once "{$TO_HOME}/_plugins.php";
 // Include database connections
 //require_once "{$TO_HOME}/_config.php";
 // Load the routes configuration
@@ -29,7 +29,7 @@ require_once "{$TO_HOME}/spa.php/_router.php";
 //require_once "{$TO_HOME}/spa.php/_auth.php";
 //require_once "{$TO_HOME}/_auth.php";
 // Include common functions and initializations that may require "/_routes.php"
-//require_once "{$TO_HOME}/_common.php";
+require_once "{$TO_HOME}/_common.php";
 
 // --- PHP ---
 ?>
@@ -37,8 +37,9 @@ require_once "{$TO_HOME}/spa.php/_router.php";
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>197 años de historia - Universidad de Cartagena</title>
-    <link rel="icon" type="image/png" href="<?= "{$HOME_PATH}/img/escudo.png" ?>" />
+    <title>FGC Tourney | byUwUr</title>
+    <link rel="icon" id="page-icon" type="image/png" href="<?= "{$HOME_PATH}/img/favicon.png" ?>" />
+    <link rel="apple-touch-icon" href="<?= "{$HOME_PATH}/img/favicon.png" ?>" />
     <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/swiper.min.css" ?>" />
     <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/bootstrap.min.css" ?>" />
     <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/fontawesome.min.css" ?>" />
@@ -53,7 +54,7 @@ require_once "{$TO_HOME}/spa.php/_router.php";
     <script src="https://www.google.com/recaptcha/api.js" defer></script>
     <style>
         :root {
-            --primary-color: #1b1f3a;
+            --primary-color: #100;
         }
 
         #spa-loader {
@@ -65,10 +66,13 @@ require_once "{$TO_HOME}/spa.php/_router.php";
 <body>
     <!-- byuwur/spa.php | Copyright (c) 2025 Andrés Trujillo [Mateus] byUwUr -->
     <div id="spa-loader">
-        <!--div class="load-circle-back"></!--div>
-        <div-- class="load-circle-fore"></div-->
-        <div class="w-100 has-background-contain" style="background-image:url(<?= "{$HOME_PATH}/img/unicartagena_razones.png" ?>);height:10vh;"></div>
-        <div class="load-text">Cargando...</div>
+        <div class="load-circle-back"></div>
+        <div class="load-circle-fore"></div>
+        <div class="load-text">
+            <?= "{$_v}" ?><br><br><br>
+            <?= "{$_load}" ?><br>
+            <a class="btn btn-tertiary" href='javascript:location.reload();'><?= "{$_reload}" ?></a>
+        </div>
     </div>
     <div id="bywr-accessibility">
         <a href="javascript:byCommon.accessibilityToggle();" data-bs-toggle="tooltip" data-bs-title="Accesibilidad" title="Accesibilidad">

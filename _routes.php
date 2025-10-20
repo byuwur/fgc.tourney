@@ -8,10 +8,12 @@
 
 // URIs
 $ROUTE_ROOT = "/";
+$ROUTE_ES = "es";
+$ROUTE_EN = "en";
 
 // Default components to include on each route
 $COMPONENTS_EMPTY = ["COMPONENT" => ["nav#spa-nav" => "", "footer#spa-foot" => ""]];
-$ROOT_COMPONENTS = ["COMPONENT" => ["nav#spa-nav" => ""]];
+$ROOT_COMPONENTS = ["COMPONENT" => ["nav#spa-nav" => "/sidebar.php", "footer#spa-foot" => ""]];
 
 // Route definitions
 $routes = [
@@ -19,4 +21,6 @@ $routes = [
 
     // "/"
     "{$ROUTE_ROOT}" => ["URI" => "/main.php", ...$ROOT_COMPONENTS],
+    "/{$ROUTE_ES}" => ["URI" => "", "GET" => ["lang" => "es"], ...$ROOT_COMPONENTS],
+    "/{$ROUTE_EN}" => ["URI" => "", "GET" => ["lang" => "en"], ...$ROOT_COMPONENTS],
 ];
