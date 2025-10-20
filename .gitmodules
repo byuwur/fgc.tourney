@@ -1,0 +1,3 @@
+[submodule "spa.php"]
+	path = spa.php
+	url = https://github.com/byuwur/spa.php.git
