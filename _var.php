@@ -30,3 +30,6 @@ if (isset($setLocalStorage) && $setLocalStorage) { ?>
         localStorage.setItem("HOME_PATH", "<?= $HOME_PATH ?>");
     </script>
 <?php }
+// Definitions
+ini_set('display_errors', 0);
+#define('APP_VERSION', '0.1');

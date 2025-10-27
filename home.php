@@ -6,7 +6,7 @@
  * Deps: _var.php, _common.php, _functions.php, _plugin.php, _routes.php, _router.php
  * Copyright (c) 2025 Andrés Trujillo [Mateus] byUwUr
  */
-ini_set('display_errors', 0);
+
 // Sets a flag to enable the inclusion of local storage variables in the HTML output
 $setLocalStorage = true;
 // Include the main variable configuration file
