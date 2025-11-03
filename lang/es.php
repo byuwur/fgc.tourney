@@ -1,7 +1,7 @@
 <?php
 //TEXTOS EN ESPAÑOL
 //Use HTML si necesita
-$_v = "FGC Tourney {$_ENV["APP_VERSION"]}";
+$_v = "FGC Tourney v" . APP_VERSION;
 $_load = "¿Aún cargando?";
 $_reload = "Intenta recargando.";
 # Sidebar
@@ -11,6 +11,6 @@ $_langs = "Idiomas";
 $_themes = "Temas";
 $_light = "Claro";
 $_dark = "Oscuro";
-$_footer = "&copy;" . date("Y") . " Andrés Trujillo [Mateus] byUwUr<br>Hecho con <i class='fas fa-heart'></i>por <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>";
+$_footer = "&copy;" . date("Y") . " Andrés Trujillo [Mateus] byUwUr<br>Hecho con <i class='fas fa-heart'></i>por <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a><br>{$_v}";
 # Home
 $_hello_world = "Hola, mundo. ES";

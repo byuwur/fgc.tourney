@@ -6,6 +6,8 @@
  * Copyright (c) 2025 Andrés Trujillo [Mateus] byUwUr
  */
 
+define("APP_VERSION", $_ENV["APP_VERSION"] ?? "0.1by");
+
 // This is an example of how you can use SPA.php files along side yours.
 require_once "{$TO_HOME}/spa.php/_common.php";
 // Just call the SPA.php file and add whatever you need below

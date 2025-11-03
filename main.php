@@ -15,7 +15,7 @@ require_once "{$TO_HOME}/_common.php";
 ?>
 <div class="container app-container">
     <p><?= "{$_hello_world}" ?></p>
-    <p>App version: v<?= "{$_ENV["APP_VERSION"]}" ?></p>
+    <p>App version: v<?= APP_VERSION ?></p>
     <a href="<?= "{$ROUTE_ROOT}{$ROUTE_EN}" ?>">English</a> | <a href="<?= "{$ROUTE_ROOT}{$ROUTE_ES}" ?>">Español</a>
 </div>
 <script>

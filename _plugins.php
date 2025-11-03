@@ -8,5 +8,5 @@
 
 require_once "{$TO_HOME}/spa.php/_plugins.php";
 
-$dotenv = Dotenv\Dotenv::createImmutable($TO_HOME);
-$dotenv->load();
+#$dotenv = Dotenv\Dotenv::createImmutable($TO_HOME);
+#$dotenv->load();
